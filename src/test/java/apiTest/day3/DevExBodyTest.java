@@ -45,11 +45,13 @@ public class DevExBodyTest {
         System.out.println("response.path(\"company\") = " + response.path("company"));
         System.out.println("response.path(\"mail\") = " + response.path("name"));
         System.out.println("response.path(\"status\") = " + response.path("status"));
+
         int actualUserID = response.path("id");
         String actualEmail = response.path("email");
         String actualName = response.path("name");
         String actualCompany = response.path("company");
         String actualStatus = response.path("status");
+
         assertEquals(actualUserID,213);
         assertEquals(actualEmail,"rambo@gmail.com");
         assertEquals(actualName,"sylvester");

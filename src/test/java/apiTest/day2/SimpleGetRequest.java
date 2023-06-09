@@ -19,7 +19,6 @@ public class SimpleGetRequest {
         // print body
         response.prettyPrint();
     }
-
     @Test
     public void test2() {
 

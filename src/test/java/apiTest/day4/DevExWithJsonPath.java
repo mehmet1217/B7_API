@@ -79,7 +79,8 @@ public class DevExWithJsonPath {
          */
 
         Response response = RestAssured.given().accept(ContentType.JSON)
-                .and().queryParam("id", 681)
+                .and()
+                .queryParam("id", 681)
                 .when()
                 .get(devExURL + "/api/profile/userQuery");
         assertEquals(response.statusCode(),200);
